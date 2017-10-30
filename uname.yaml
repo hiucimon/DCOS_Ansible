@@ -1,5 +1,5 @@
 ---
-- hosts: cluster1
+- hosts: dcos
   tasks:
   - name: get the uname -a frome the hosts
     command: /bin/uname
