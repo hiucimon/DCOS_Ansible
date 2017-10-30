@@ -2,4 +2,4 @@
 - hosts: webservers
   tasks:
   - name: get the uname -a frome the hosts
-    command: command: /bin/uname
+    command: /bin/uname
