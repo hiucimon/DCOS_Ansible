@@ -1,0 +1,11 @@
+---
+- hosts: dcos
+  tasks:
+  - name: Install vagrant
+    command: apt install -y vagrant
+    become: true
+    register: date
+    
+  - debug: msg="{{ date.stdout }}"
+
+  - debug: msg="{{ date.stderr }}"
