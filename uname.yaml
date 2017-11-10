@@ -2,4 +2,4 @@
 - hosts: dcos
   tasks:
   - name: get the uname -a frome the hosts
-    command: /bin/date
+    command: /bin/date >/tmp/testfile
