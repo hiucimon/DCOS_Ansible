@@ -13,4 +13,4 @@
   - copy: 
       src: vagrant/Vagrantfile
       dest: /tmp/Vagrantfile
-
+      force: yes
