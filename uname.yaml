@@ -2,4 +2,10 @@
 - hosts: dcos
   tasks:
   - name: get the uname -a frome the hosts
-    command: /bin/date >/tmp/testfile
+    command: /bin/date 
+    register: date
+    
+- debug: msg="{{ date.stdout }}"
+
+- debug: msg="{{ date.stderr }}"
+
