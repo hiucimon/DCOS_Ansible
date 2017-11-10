@@ -4,13 +4,16 @@
   - name: Install vagrant
     command: apt install -y vagrant
     become: true
-    register: date
-    
-  - debug: msg="{{ date.stdout }}"
-
-  - debug: msg="{{ date.stderr }}"
 
   - copy: 
       src: vagrant/Vagrantfile
       dest: /tmp/Vagrantfile
       force: yes
+
+  - name: create VM
+    command: cd /tmp;vagrant up 
+    register: date
+    
+  - debug: msg="{{ date.stdout }}"
+
+  - debug: msg="{{ date.stderr }}"
