@@ -2,7 +2,7 @@
 - hosts: dcos
   tasks:
   - name: Install vagrant
-    command: apt install -y vagrant
+    command: apt install -y vagrant virtualbox
     become: true
 
   - copy: 
