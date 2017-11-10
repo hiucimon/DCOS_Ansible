@@ -5,7 +5,7 @@
     command: /bin/date 
     register: date
     
-- debug: msg="{{ date.stdout }}"
+  - debug: msg="{{ date.stdout }}"
 
-- debug: msg="{{ date.stderr }}"
+  - debug: msg="{{ date.stderr }}"
 
