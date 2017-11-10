@@ -1,5 +1,9 @@
 ---
 - hosts: dcos
+
+  environment:
+    PATH: "{{ ansible_env.PATH }}:/usr/bin/:/usr/local/bin/"
+    
   tasks:
   - name: Install vagrant
     command: apt install -y vagrant virtualbox
