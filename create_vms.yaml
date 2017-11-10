@@ -12,5 +12,5 @@
 
   - copy: 
       src: vagrant/Vagrantfile
-      dest: Vagrantfile
+      dest: /tmp/Vagrantfile
 
