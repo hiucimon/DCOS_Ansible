@@ -7,11 +7,11 @@
 
   - copy: 
       src: vagrant/Vagrantfile
-      dest: /tmp/Vagrantfile
+      dest: ~/Vagrantfile
       force: yes
 
   - name: create VM
-    command: cd /tmp;vagrant up 
+    command: vagrant up 
     register: date
     
   - debug: msg="{{ date.stdout }}"
