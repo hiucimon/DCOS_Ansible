@@ -10,8 +10,7 @@
 
   - debug: msg="{{ date.stderr }}"
 
-  - name: Copy Vagrantfile
-    copy: 
+  - copy: 
     src: vagrant/Vagrantfile
     dest: Vagrantfile
 
